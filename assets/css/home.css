@@ -25,6 +25,7 @@
 .header.scrolling .header__search-icon i,
 .header.scrolling .header__search-input,
 .header.scrolling .header__account-login,
+.header.scrolling ::placeholder,
 .header.scrolling .header__account-register,
 .header.scrolling .NameShop,
 .header.scrolling .header__account-login:after,

@@ -511,14 +511,20 @@ textarea.form-control {
 }
 
 .header__search-input {
+
     border: none;
+    color : white;
     outline: none;
+    
     background: none;
     padding: 0 16px;
     font-size: 1.6rem;
     flex-grow: 1;
     color: var(--black-cl-2);
+
 }
+
+
 
 .header__search-icon {
     border: none;
@@ -1447,6 +1453,9 @@ textarea.form-control {
     }
     .header__account-register,
     .NameShop,
+
+   
+
     .header__account-login {
         display: none;
     }

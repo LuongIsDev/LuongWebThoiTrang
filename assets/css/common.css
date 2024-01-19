@@ -1538,3 +1538,11 @@ textarea.form-control {
 }
 
 
+.imgL{
+
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 50px;
+    margin-bottom:30px;
+    
+}

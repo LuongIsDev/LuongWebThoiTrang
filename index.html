@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 
 <head>
     <meta charset="UTF-8">
@@ -293,6 +290,7 @@
                     </div>
                     <div class="line"></div>
                 </div>
+
                 <!-- Tab content -->
                 <div class="tab-content">
                     <div class="tab-pane active">
@@ -347,7 +345,7 @@
                                         <h3 class="product__name">Áo khoác lông cừu</h3>
                                         <div class="product__price">
                                             <div class="price__old">
-                                                190.000 đ
+                                                195.000 đ
                                             </div>
                                             <div class="price__new">110.000 <span class="price__unit">đ</span></div>
                                         </div>
@@ -1453,22 +1451,25 @@
                 <div class="form-group">
                     <label for="account" class="form-label">Họ Tên</label>
                     <input id="account" name="account" type="text" class="form-control">
-                    <span class="form-message">Không hợp lệ !</span>
+                    <!-- <span class="form-message">Không hợp lệ !</span> -->
+                    <p>.</p>
                 </div>
                 <div class="form-group">
-                    <label for="password" class="form-label">Tài khoản Email *</label>
-                    <input id="password" name="password" type="text" class="form-control">
+                    <label for="account" class="form-label">Tài khoản Email *</label>
+                    <input id="account" name="account" type="text" class="form-control">
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Mật khẩu *</label>
-                    <input id="password" name="password" type="text" class="form-control">
-                    <span class="form-message"></span>
+                    <input id="password" name="password" type="password" class="form-control">
+                    <!-- <span class="form-message"></span> -->
+                    <p>.</p>
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Nhập lại mật khẩu *</label>
                     <input id="password" name="password" type="text" class="form-control">
-                    <span class="form-message"></span>
+                    <!-- <span class="form-message"></span> -->
+                    <p>.</p>
                 </div>
                 <div class="authen__btns">
                     <div class="btn btn--default">Đăng Kí</div>
@@ -1477,25 +1478,30 @@
         </div>
         <div class=" modal" id="my-Login">
             <a href="#" class="overlay-close"></a>
+            <form action="" method="post">
             <div class="authen-modal login">
                 <h3 class="authen-modal__title">Đăng Nhập</h3>
                 <div class="form-group">
                     <label for="account" class="form-label">Địa chỉ email *</label>
-                    <input id="account" name="account" type="text" class="form-control">
-                    <span class="form-message">Tài khoản không chính xác !</span>
+                    <br>
+                    <input id="account" name="accountlogin" type="text" class="form-control">
+                    <!-- <span class="form-message">Tài khoản không chính xác !</span> -->
+                    <a>.</a>
+                    
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Mật khẩu *</label>
-                    <input id="password" name="password" type="text" class="form-control">
+                    <input id="password" name="passwordlogin" type="password" class="form-control">
                     <span class="form-message"></span>
                 </div>
                 <div class="authen__btns">
-                    <div class="btn btn--default">Đăng Nhập</div>
+                    <div class="btn btn--default" onclick="checklogin()">Đăng Nhập</div>
                     <input type="checkbox" class="authen-checkbox">
                     <label class="form-label">Ghi nhớ mật khẩu</label>
                 </div>
                 <a class="authen__link">Quên mật khẩu ?</a>
             </div>
+            </form>
         </div>
         <div class="up-top" id="upTop" onclick="goToTop()">
             <i class="fas fa-chevron-up"></i>
@@ -1570,3 +1576,8 @@
 </body>
 
 </html>
+<?php
+function checklogin(){
+
+}
+?>

@@ -98,7 +98,7 @@
                             </li>
                         </ul>
                         <div class="total-money">Tổng cộng: 135.000đ</div>
-                        <a href="cart.html" class="btn btn--default cart-btn">Xem giỏ hàng</a>
+                        <a href="cart.php" class="btn btn--default cart-btn">Xem giỏ hàng</a>
                         <a href="pay.html" class="btn btn--default cart-btn orange">Thanh toán</a>
                         <!-- norcart -->
                         <!-- <img class="header__cart-img-nocart" src="http://www.giaybinhduong.com/images/empty-cart.JPG" alt=""> -->
@@ -142,39 +142,19 @@
                                 <a href="" class="sub-nav__link heading">Thời trang</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Áo khoác mùa đông</a>
+                                <a href="listProduct.php" class="sub-nav__link">Áo khoác mùa đông</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Quần bò</a>
+                                <a href="listProduct.php" class="sub-nav__link">Quần bò</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Sửa rửa mặt </a>
+                                <a href="listProduct.php" class="sub-nav__link">Sửa rửa mặt </a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Đồng hồ đeo tay</a>
+                                <a href="listProduct.php" class="sub-nav__link">Đồng hồ đeo tay</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Mũ thời trang</a>
-                            </li>
-                        </ul>
-                        <ul class="sub-nav">
-                            <li class="sub-nav__item">
-                                <a href="" class="sub-nav__link heading">Thời trang</a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Áo khoác mùa đông</a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Quần bò</a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Sửa rửa mặt </a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Đồng hồ đeo tay</a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Mũ thời trang</a>
+                                <a href="listProduct.php" class="sub-nav__link">Mũ thời trang</a>
                             </li>
                         </ul>
                         <ul class="sub-nav">
@@ -182,19 +162,19 @@
                                 <a href="" class="sub-nav__link heading">Thời trang</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Áo khoác mùa đông</a>
+                                <a href="listProduct.php" class="sub-nav__link">Áo khoác mùa đông</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Quần bò</a>
+                                <a href="listProduct.php" class="sub-nav__link">Quần bò</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Sửa rửa mặt </a>
+                                <a href="listProduct.php" class="sub-nav__link">Sửa rửa mặt </a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Đồng hồ đeo tay</a>
+                                <a href="listProduct.php" class="sub-nav__link">Đồng hồ đeo tay</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Mũ thời trang</a>
+                                <a href="listProduct.php" class="sub-nav__link">Mũ thời trang</a>
                             </li>
                         </ul>
                         <ul class="sub-nav">
@@ -202,19 +182,39 @@
                                 <a href="" class="sub-nav__link heading">Thời trang</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Áo khoác mùa đông</a>
+                                <a href="listProduct.php" class="sub-nav__link">Áo khoác mùa đông</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Quần bò</a>
+                                <a href="listProduct.php" class="sub-nav__link">Quần bò</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Sửa rửa mặt </a>
+                                <a href="listProduct.php" class="sub-nav__link">Sửa rửa mặt </a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Đồng hồ đeo tay</a>
+                                <a href="listProduct.php" class="sub-nav__link">Đồng hồ đeo tay</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Mũ thời trang</a>
+                                <a href="listProduct.php" class="sub-nav__link">Mũ thời trang</a>
+                            </li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li class="sub-nav__item">
+                                <a href="" class="sub-nav__link heading">Thời trang</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Áo khoác mùa đông</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Quần bò</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Sửa rửa mặt </a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Đồng hồ đeo tay</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Mũ thời trang</a>
                             </li>
                         </ul>
                     </div>

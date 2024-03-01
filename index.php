@@ -60,44 +60,44 @@
                         <ul class="order__list">
                             <li class="item-order">
                                 <div class="order-wrap">
-                                    <a href="product.html" class="order-img">
+                                    <a href="product.php" class="order-img">
                                         <img src="./assets/img/product/Slide1.JPG" alt="">
                                     </a>
                                     <div class="order-main">
-                                        <a href="product.html" class="order-main-name">Áo sơ mi caro </a>
+                                        <a href="product.php" class="order-main-name">Áo sơ mi caro </a>
                                         <div class="order-main-price"> 45,000 ₫</div>
                                     </div>
-                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                    <a href="product.php" class="order-close"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </li>
                             <li class="item-order">
                                 <div class="order-wrap">
-                                    <a href="product.html" class="order-img">
+                                    <a href="product.php" class="order-img">
                                         <img src="./assets/img/product/Slide2.JPG" alt="">
                                     </a>
                                     <div class="order-main">
-                                        <a href="product.html" class="order-main-name">Áo khoác đen</a>
+                                        <a href="product.php" class="order-main-name">Áo khoác đen</a>
                                         <div class="order-main-price"> 476,000 ₫</div>
                                     </div>
-                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                    <a href="product.php" class="order-close"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </li>
                             <li class="item-order">
                                 <div class="order-wrap">
-                                    <a href="product.html" class="order-img">
+                                    <a href="product.php" class="order-img">
                                         <img src="./assets/img/product/Slide23.JPG" alt="">
                                     </a>
                                     <div class="order-main">
-                                        <a href="product.html" class="order-main-name">Áo phông xanh </a>
+                                        <a href="product.php" class="order-main-name">Áo phông xanh </a>
                                         <div class="order-main-price">210,000 ₫</div>
                                     </div>
-                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                    <a href="product.php" class="order-close"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </li>
                         </ul>
                         <div class="total-money">Tổng cộng: 135.000đ</div>
-                        <a href="cart.html" class="btn btn--default cart-btn">Xem giỏ hàng</a>
-                        <a href="pay.html" class="btn btn--default cart-btn orange">Thanh toán</a>
+                        <a href="cart.php" class="btn btn--default cart-btn">Xem giỏ hàng</a>
+                        <a href="pay.php" class="btn btn--default cart-btn orange">Thanh toán</a>
                         <!-- norcart -->
                         <!-- <img class="header__cart-img-nocart" src="http://www.giaybinhduong.com/images/empty-cart.JPG" alt=""> -->
                     </div>
@@ -140,39 +140,19 @@
                                 <a href="" class="sub-nav__link heading">Thời trang</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Áo khoác mùa đông</a>
+                                <a href="listProduct.php" class="sub-nav__link">Áo khoác mùa đông</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Quần bò</a>
+                                <a href="listProduct.php" class="sub-nav__link">Quần bò</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Sửa rửa mặt </a>
+                                <a href="listProduct.php" class="sub-nav__link">Sửa rửa mặt </a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Đồng hồ đeo tay</a>
+                                <a href="listProduct.php" class="sub-nav__link">Đồng hồ đeo tay</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Mũ thời trang</a>
-                            </li>
-                        </ul>
-                        <ul class="sub-nav">
-                            <li class="sub-nav__item">
-                                <a href="" class="sub-nav__link heading">Thời trang</a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Áo khoác mùa đông</a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Quần bò</a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Sửa rửa mặt </a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Đồng hồ đeo tay</a>
-                            </li>
-                            <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Mũ thời trang</a>
+                                <a href="listProduct.php" class="sub-nav__link">Mũ thời trang</a>
                             </li>
                         </ul>
                         <ul class="sub-nav">
@@ -180,19 +160,19 @@
                                 <a href="" class="sub-nav__link heading">Thời trang</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Áo khoác mùa đông</a>
+                                <a href="listProduct.php" class="sub-nav__link">Áo khoác mùa đông</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Quần bò</a>
+                                <a href="listProduct.php" class="sub-nav__link">Quần bò</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Sửa rửa mặt </a>
+                                <a href="listProduct.php" class="sub-nav__link">Sửa rửa mặt </a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Đồng hồ đeo tay</a>
+                                <a href="listProduct.php" class="sub-nav__link">Đồng hồ đeo tay</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Mũ thời trang</a>
+                                <a href="listProduct.php" class="sub-nav__link">Mũ thời trang</a>
                             </li>
                         </ul>
                         <ul class="sub-nav">
@@ -200,28 +180,48 @@
                                 <a href="" class="sub-nav__link heading">Thời trang</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Áo khoác mùa đông</a>
+                                <a href="listProduct.php" class="sub-nav__link">Áo khoác mùa đông</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Quần bò</a>
+                                <a href="listProduct.php" class="sub-nav__link">Quần bò</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Sửa rửa mặt </a>
+                                <a href="listProduct.php" class="sub-nav__link">Sửa rửa mặt </a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Đồng hồ đeo tay</a>
+                                <a href="listProduct.php" class="sub-nav__link">Đồng hồ đeo tay</a>
                             </li>
                             <li class="sub-nav__item">
-                                <a href="listProduct.html" class="sub-nav__link">Mũ thời trang</a>
+                                <a href="listProduct.php" class="sub-nav__link">Mũ thời trang</a>
+                            </li>
+                        </ul>
+                        <ul class="sub-nav">
+                            <li class="sub-nav__item">
+                                <a href="" class="sub-nav__link heading">Thời trang</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Áo khoác mùa đông</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Quần bò</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Sửa rửa mặt </a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Đồng hồ đeo tay</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="listProduct.php" class="sub-nav__link">Mũ thời trang</a>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li class="header__nav-item">
-                    <a href="news.html" class="header__nav-link">Tin Tức</a>
+                    <a href="news.php" class="header__nav-link">Tin Tức</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="contact.html" class="header__nav-link">Liên Hệ</a>
+                    <a href="contact.php" class="header__nav-link">Liên Hệ</a>
                 </li>
             </ul>
         </div>
@@ -235,7 +235,7 @@
                         <div class="caption">
                             <h1>Giảm giá 30%</h1>
                             <p>Giảm giá cực sốc trong tháng 2!</p>
-                            <a href="listProduct.html" class="btn btn--default">Xem ngay</a>
+                            <a href="listProduct.php" class="btn btn--default">Xem ngay</a>
 
                         </div>
                     </div>
@@ -245,7 +245,7 @@
                         <div class="caption">
                             <h1>Giảm giá 30%</h1>
                             <p>Giảm giá cực sốc trong tháng 2!</p>
-                            <a href="listProduct.html" class="btn btn--default">Xem ngay</a>
+                            <a href="listProduct.php" class="btn btn--default">Xem ngay</a>
 
                         </div>
                     </div>
@@ -255,7 +255,7 @@
                         <div class="caption">
                             <h1>Giảm giá 30%</h1>
                             <p>Giảm giá cực sốc trong tháng 2!</p>
-                            <a href="listProduct.html" class="btn btn--default">Xem ngay</a>
+                            <a href="listProduct.php" class="btn btn--default">Xem ngay</a>
 
                         </div>
                     </div>
@@ -312,8 +312,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -333,8 +333,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -354,8 +354,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -375,8 +375,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -396,8 +396,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -417,8 +417,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -438,8 +438,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -459,8 +459,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -480,8 +480,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -501,8 +501,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -522,8 +522,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -543,8 +543,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                         </div>
@@ -573,8 +573,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -594,8 +594,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -615,8 +615,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -636,8 +636,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -657,8 +657,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -678,8 +678,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -699,8 +699,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -720,8 +720,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -741,8 +741,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -762,8 +762,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -783,8 +783,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -804,8 +804,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                         </div>
@@ -834,8 +834,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -855,8 +855,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -876,8 +876,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -897,8 +897,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -918,8 +918,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -939,8 +939,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -960,8 +960,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -981,8 +981,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -1002,8 +1002,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -1023,8 +1023,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -1044,8 +1044,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>
                             <div class="col l-2 m-4 s-6">
@@ -1065,8 +1065,8 @@
                                             <span class="product__sale-text">Giảm</span>
                                         </div>
                                     </div>
-                                    <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                                    <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                                    <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                                    <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                                 </div>
                             </div>                           
                         </div>
@@ -1096,8 +1096,8 @@
                                 <span class="product__sale-text">Giảm</span>
                             </div>
                         </div>
-                        <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                        <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                        <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                        <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                     </div>
 
 
@@ -1118,8 +1118,8 @@
                                 <span class="product__sale-text">Giảm</span>
                             </div>
                         </div>
-                        <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                        <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                        <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                        <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                     </div>
 
 
@@ -1139,8 +1139,8 @@
                                 <span class="product__sale-text">Giảm</span>
                             </div>
                         </div>
-                        <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                        <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                        <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                        <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                     </div>
 
                     
@@ -1161,8 +1161,8 @@
                                     <span class="product__sale-text">Giảm</span>
                                 </div>
                             </div>
-                            <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                            <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                            <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                            <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                         </div>
                    
                         <div class="product">
@@ -1181,8 +1181,8 @@
                                     <span class="product__sale-text">Giảm</span>
                                 </div>
                             </div>
-                            <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                            <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                            <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                            <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                         </div>
                    
                 
@@ -1202,8 +1202,8 @@
                                     <span class="product__sale-text">Giảm</span>
                                 </div>
                             </div>
-                            <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                            <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                            <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                            <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                         </div>
                    
                     
@@ -1223,8 +1223,8 @@
                                     <span class="product__sale-text">Giảm</span>
                                 </div>
                             </div>
-                            <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                            <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                            <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                            <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                         </div>
                    
                    
@@ -1244,8 +1244,8 @@
                                     <span class="product__sale-text">Giảm</span>
                                 </div>
                             </div>
-                            <a href="product.html" class="viewDetail">Xem chi tiết</a>
-                            <a href="cart.html" class="addToCart">Thêm vào giỏ</a>
+                            <a href="product.php" class="viewDetail">Xem chi tiết</a>
+                            <a href="cart.php" class="addToCart">Thêm vào giỏ</a>
                         </div>
                     
                 </div>
@@ -1299,7 +1299,7 @@
                 <h3 class="category__title">Nhất Phát Men's Fashion</h3>
                 <h3 class="category__heading">Tin Tức</h3>
                 <div class="owl-carousel news owl-theme">
-                    <a href="news.html" class="news">
+                    <a href="news.php" class="news">
                         <div class="news__img">
                             <img src="./assets/img/news/TinTuc.png" alt="">
                         </div>
@@ -1312,7 +1312,7 @@
 
                         </div>
                     </a>
-                    <a href="news.html" class="news">
+                    <a href="news.php" class="news">
                         <div class="news__img">
                             <img src="./assets/img/news/TinTuc.png" alt="">
                         </div>
@@ -1325,7 +1325,7 @@
 
                         </div>
                     </a>
-                    <a href="news.html" class="news">
+                    <a href="news.php" class="news">
                         <div class="news__img">
                             <img src="./assets/img/news/TinTuc.png" alt="">
                         </div>
@@ -1343,13 +1343,13 @@
         <div class="main__bands">
             <div class="grid wide">
                 <div class="owl-carousel bands">
-                    <a href="listProduct.html" class="band__item" style="background-image: url(./assets/img/band/band1.png)"></a>
-                    <a href="listProduct.html" class="band__item" style="background-image: url(./assets/img/band/band2.png)"></a>
-                    <a href="listProduct.html" class="band__item" style="background-image: url(./assets/img/band/band3.png)"></a>
-                    <a href="listProduct.html" class="band__item" style="background-image: url(./assets/img/band/band4.png)"></a>
-                    <a href="listProduct.html" class="band__item" style="background-image: url(./assets/img/band/band5.png)"></a>
-                    <a href="listProduct.html" class="band__item" style="background-image: url(./assets/img/band/band6.png)"></a>
-                    <a href="listProduct.html" class="band__item" style="background-image: url(./assets/img/band/band7.png)"></a>
+                    <a href="listProduct.php" class="band__item" style="background-image: url(./assets/img/band/band1.png)"></a>
+                    <a href="listProduct.php" class="band__item" style="background-image: url(./assets/img/band/band2.png)"></a>
+                    <a href="listProduct.php" class="band__item" style="background-image: url(./assets/img/band/band3.png)"></a>
+                    <a href="listProduct.php" class="band__item" style="background-image: url(./assets/img/band/band4.png)"></a>
+                    <a href="listProduct.php" class="band__item" style="background-image: url(./assets/img/band/band5.png)"></a>
+                    <a href="listProduct.php" class="band__item" style="background-image: url(./assets/img/band/band6.png)"></a>
+                    <a href="listProduct.php" class="band__item" style="background-image: url(./assets/img/band/band7.png)"></a>
                 </div>
             </div>
         </div>
@@ -1460,6 +1460,8 @@
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+
     
     // Kiểm tra username
     if (empty($_POST["form-userName"])) {
@@ -1514,6 +1516,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // header("Location: register_process.php");
         // exit;
         header("Location: index.php");
+        
     }
 
 

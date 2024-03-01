@@ -37,7 +37,7 @@
                     <span></span>
                     <span></span>
                 </div>
-                <a href="index.html" class="header__logo">
+                <a href="index.php" class="header__logo">
                     <img  src="./assets/img/slider/slide-logo.png" alt="" class="imgL">
                 </a>
                 <div class="header__search">
@@ -129,7 +129,7 @@
                     </ul>
                 </li>
                 <li class="header__nav-item index">
-                    <a href="index.html" class="header__nav-link">Trang chủ</a>
+                    <a href="index.php" class="header__nav-link">Trang chủ</a>
                 </li>
                 <li class="header__nav-item">
                     <a href="#" class="header__nav-link">Giới Thiệu</a>
@@ -243,8 +243,7 @@
             </div>
             <div class="row">
                 <div class="col l-6 m-12 s-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3738.382986183426!2d106.33761211423521!3d20.449457212678926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zbmfhu41jIMOhbmggY29zbWV0aWNz!5e0!3m2!1svi!2s!4v1621128017258!5m2!1svi!2s" width="100%"
-                        height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7420.099831256685!2d105.8045338!3d21.5839746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31352738b1bf08a3%3A0x515f4860ede9e108!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiAmIFRydXnhu4FuIHRow7RuZyBUaMOhaSBOZ3V5w6pu!5e0!3m2!1svi!2s!4v1708967957090!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col l-6 m-12 s-12">
                     <div class="contact__wrap">
@@ -393,6 +392,11 @@
         </div>
     </div>
     <!-- Modal Form -->
+    
+
+
+
+
     <div class="ModalForm">
         <div class="modal" id="my-Register">
             <a href="#" class="overlay-close"></a>
@@ -401,22 +405,25 @@
                 <div class="form-group">
                     <label for="account" class="form-label">Họ Tên</label>
                     <input id="account" name="account" type="text" class="form-control">
-                    <span class="form-message">Không hợp lệ !</span>
+                    <!-- <span class="form-message">Không hợp lệ !</span> -->
+                    <p>.</p>
                 </div>
                 <div class="form-group">
-                    <label for="password" class="form-label">Tài khoản Email *</label>
-                    <input id="password" name="password" type="text" class="form-control">
+                    <label for="account" class="form-label">Tài khoản Email *</label>
+                    <input id="account" name="account" type="text" class="form-control">
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Mật khẩu *</label>
-                    <input id="password" name="password" type="text" class="form-control">
-                    <span class="form-message"></span>
+                    <input id="password" name="password" type="password" class="form-control">
+                    <!-- <span class="form-message"></span> -->
+                    <p>.</p>
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Nhập lại mật khẩu *</label>
                     <input id="password" name="password" type="text" class="form-control">
-                    <span class="form-message"></span>
+                    <!-- <span class="form-message"></span> -->
+                    <p>.</p>
                 </div>
                 <div class="authen__btns">
                     <div class="btn btn--default">Đăng Kí</div>
@@ -425,31 +432,35 @@
         </div>
         <div class=" modal" id="my-Login">
             <a href="#" class="overlay-close"></a>
+            <form action="" method="post">
             <div class="authen-modal login">
                 <h3 class="authen-modal__title">Đăng Nhập</h3>
                 <div class="form-group">
                     <label for="account" class="form-label">Địa chỉ email *</label>
-                    <input id="account" name="account" type="text" class="form-control">
-                    <span class="form-message">Tài khoản không chính xác !</span>
+                    <br>
+                    <input id="account" name="accountlogin" type="text" class="form-control">
+                    <!-- <span class="form-message">Tài khoản không chính xác !</span> -->
+                    <a>.</a>
+                    
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Mật khẩu *</label>
-                    <input id="password" name="password" type="text" class="form-control">
+                    <input id="password" name="passwordlogin" type="password" class="form-control">
                     <span class="form-message"></span>
                 </div>
                 <div class="authen__btns">
-                    <div class="btn btn--default">Đăng Nhập</div>
+                    <div class="btn btn--default" onclick="checklogin()">Đăng Nhập</div>
                     <input type="checkbox" class="authen-checkbox">
                     <label class="form-label">Ghi nhớ mật khẩu</label>
                 </div>
                 <a class="authen__link">Quên mật khẩu ?</a>
             </div>
+            </form>
         </div>
         <div class="up-top" id="upTop" onclick="goToTop()">
             <i class="fas fa-chevron-up"></i>
-        </div>
-
-    </div>
+        </div>  
+    </div> 
     <!-- Sccipt for owl caroucel -->
 
     <!-- Script common -->

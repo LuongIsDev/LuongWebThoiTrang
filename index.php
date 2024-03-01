@@ -127,7 +127,7 @@
                     </ul>
                 </li>
                 <li class="header__nav-item index">
-                    <a href="index.html" class="header__nav-link">Trang chủ</a>
+                    <a href="index.php" class="header__nav-link">Trang chủ</a>
                 </li>
                 <li class="header__nav-item">
                     <a href="#" class="header__nav-link">Giới Thiệu</a>
@@ -1453,66 +1453,176 @@
         </div>
     </div>
     <!-- Modal Form -->
-    <div class="ModalForm">
-        <div class="modal" id="my-Register">
-            <a href="#" class="overlay-close"></a>
-            <div class="authen-modal register">
-                <h3 class="authen-modal__title">Đăng Kí</h3>
+
+    <?php
+$ErrorMessages = array();
+$oldValues = array();
+
+$ErrorMessagesLogin = array();
+$oldValuesLogin = array();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_POST["btn btn--default"])) {
+   
+    // Kiểm tra username
+    if (empty($_POST["form-userName"])) {
+        $ErrorMessages["form-userName"] = "Vui lòng nhập tên người dùng";
+    } else {
+        $username = $_POST["form-userName"];
+        if (!preg_match("/^[a-zA-Z]*$/", $username) || preg_match("/[0-9]/", $username)) {
+            $ErrorMessages["form-userName"] = "Tên không được chứa ký tự đặc biệt hoặc số";
+        } else {
+            $oldValues["form-userName"] = $username; // Lưu giá trị đã nhập đúng
+        }
+    }
+
+    // Kiểm tra email
+    if (empty($_POST["form-email"])) {
+        $ErrorMessages["form-email"] = "Vui lòng nhập địa chỉ email";
+    } else {
+        $email = $_POST["form-email"];
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $ErrorMessages["form-email"] = "Địa chỉ email không hợp lệ";
+        } else {
+            $oldValues["form-email"] = $email; // Lưu giá trị đã nhập đúng
+        }
+    }
+
+    // Kiểm tra password
+    if (empty($_POST["form-password"])) {
+        $ErrorMessages["form-password"] = "Vui lòng nhập mật khẩu";
+    } else {
+        $password = $_POST["form-password"];
+        // Kiểm tra xem mật khẩu có ít nhất một ký tự đặc biệt và một số không
+        if (!preg_match("/[!@#$%^&*()\-_=+{};:,<.>]/", $password) || !preg_match("/[0-9]/", $password)) {
+            $ErrorMessages["form-password"] = "Mật khẩu cần chứa ít nhất một ký tự đặc biệt và một số";
+        } else {
+            $oldValues["form-password"] = $password; // Lưu giá trị đã nhập đúng
+        }
+    }
+
+    // Kiểm tra confirm password
+    if (empty($_POST["confirm-password"])) {
+        $ErrorMessages["confirm-password"] = "Vui lòng nhập lại mật khẩu";
+    } else {
+        $confirm_password = $_POST["confirm-password"];
+        if ($confirm_password !== $password) {
+            $ErrorMessages["confirm-password"] = "Mật khẩu không khớp";
+        }
+    }
+
+    // Kiểm tra nếu không có lỗi thì chuyển hướng trang về lại form đăng ký
+    if (empty($ErrorMessages)) {
+        // Thực hiện xử lý đăng ký ở đây hoặc chuyển hướng trang
+        // header("Location: register_process.php");
+        // exit;
+    }
+
+
+    // Kiểm tra email đăng nhập
+    if (empty($_POST["form-email-login"])) {
+        $ErrorMessagesLogin["form-email-login"] = "Vui lòng nhập địa chỉ email";
+    } else {
+        $emailLogin = $_POST["form-email-login"];
+        if (!filter_var($emailLogin, FILTER_VALIDATE_EMAIL)) {
+            $ErrorMessagesLogin["form-email-login"] = "Địa chỉ email không hợp lệ";
+        } else {
+            $oldValuesLogin["form-email-login"] = $emailLogin; // Lưu giá trị đã nhập đúng
+        }
+    }
+
+    // Kiểm tra password đăng nhập
+    if (empty($_POST["passwordlogin"])) {
+        $ErrorMessagesLogin["passwordlogin"] = "Vui lòng nhập mật khẩu";
+    } else {
+        // Xử lý mật khẩu đăng nhập tại đây nếu cần
+    }
+
+    // Kiểm tra nếu không có lỗi thì chuyển hướng hoặc xử lý đăng nhập
+    if (empty($ErrorMessagesLogin)) {
+        // Thực hiện xử lý đăng nhập ở đây hoặc chuyển hướng trang
+        // header("Location: login_process.php");
+        // exit;
+    }
+}
+?>
+
+<div class="ModalForm">
+    <div class="modal" id="my-Register">
+        <a href="#" class="overlay-close"></a>
+        <div class="authen-modal register">
+            <h3 class="authen-modal__title">Đăng Kí</h3>
+
+            <form action="index.php#my-Register" method="post" name="register-form">
                 <div class="form-group">
-                    <label for="account" class="form-label">Họ Tên</label>
-                    <input id="account" name="account" type="text" class="form-control">
-                    <!-- <span class="form-message">Không hợp lệ !</span> -->
+                    <label for="register-account" class="form-label">Họ Tên</label>
+                    <p>.</p>
+                    <div class="error"><?php echo isset($ErrorMessages["form-userName"]) ? $ErrorMessages["form-userName"] : "" ?></div>
+                    <input id="register-account" name="form-userName" type="text" class="form-control" value="<?php echo isset($oldValues['form-userName']) ? htmlspecialchars($oldValues['form-userName']) : ''; ?>">
                     <p>.</p>
                 </div>
                 <div class="form-group">
-                    <label for="account" class="form-label">Tài khoản Email *</label>
-                    <input id="account" name="account" type="text" class="form-control">
-                    <span class="form-message"></span>
+                    <label for="register-email" class="form-label">Tài khoản Email *</label>
+                    <p>.</p>
+                    <div class="error"><?php echo isset($ErrorMessages["form-email"]) ? $ErrorMessages["form-email"] : "" ?></div>
+                    <input id="register-email" name="form-email" type="text" class="form-control" value="<?php echo isset($oldValues['form-email']) ? htmlspecialchars($oldValues['form-email']) : ''; ?>">
+                    <div>.</div>
                 </div>
                 <div class="form-group">
-                    <label for="password" class="form-label">Mật khẩu *</label>
-                    <input id="password" name="password" type="password" class="form-control">
-                    <!-- <span class="form-message"></span> -->
+                    <label for="register-password" class="form-label">Mật khẩu *</label>
+                    <p>.</p>
+                    <div class="error"><?php echo isset($ErrorMessages["form-password"]) ? $ErrorMessages["form-password"] : "" ?></div>
+                    <input id="register-password" name="form-password" type="password" class="form-control" value="<?php echo isset($oldValues['form-password']) ? htmlspecialchars($oldValues['form-password']) : ''; ?>">
                     <p>.</p>
                 </div>
                 <div class="form-group">
-                    <label for="password" class="form-label">Nhập lại mật khẩu *</label>
-                    <input id="password" name="password" type="text" class="form-control">
-                    <!-- <span class="form-message"></span> -->
+                    <label for="confirm-password" class="form-label">Nhập lại mật khẩu *</label>
+                    <p>.</p>
+                    <div class="error"><?php echo isset($ErrorMessages["confirm-password"]) ? $ErrorMessages["confirm-password"] : "" ?></div>
+                    <input id="confirm-password" name="confirm-password" type="password" class="form-control" value="<?php echo isset($oldValues['confirm-password']) ? htmlspecialchars($oldValues['confirm-password']) : ''; ?>">
                     <p>.</p>
                 </div>
+
                 <div class="authen__btns">
-                    <div class="btn btn--default">Đăng Kí</div>
+                    <button type="submit" class="btn btn--default">Đăng Ký</button>
                 </div>
-            </div>
-        </div>
-        <div class=" modal" id="my-Login">
-            <a href="#" class="overlay-close"></a>
-            <form action="" method="post">
-            <div class="authen-modal login">
-                <h3 class="authen-modal__title">Đăng Nhập</h3>
-                <div class="form-group">
-                    <label for="account" class="form-label">Địa chỉ email *</label>
-                    <br>
-                    <input id="account" name="accountlogin" type="text" class="form-control">
-                    <!-- <span class="form-message">Tài khoản không chính xác !</span> -->
-                    <a>.</a>
-                    
-                </div>
-                <div class="form-group">
-                    <label for="password" class="form-label">Mật khẩu *</label>
-                    <input id="password" name="passwordlogin" type="password" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-                <div class="authen__btns">
-                    <div class="btn btn--default" onclick="checklogin()">Đăng Nhập</div>
-                    <input type="checkbox" class="authen-checkbox">
-                    <label class="form-label">Ghi nhớ mật khẩu</label>
-                </div>
-                <a class="authen__link">Quên mật khẩu ?</a>
-            </div>
             </form>
         </div>
+    </div>
+</div>
+
+<div class="modal" id="my-Login">
+    <a href="#" class="overlay-close"></a>
+    <form action="index.php#my-Login" method="post">
+        <div class="authen-modal login">
+            <h3 class="authen-modal__title">Đăng Nhập</h3>
+            <div class="form-group">
+                <label for="login-account" class="form-label">Địa chỉ email *</label>
+                <br>
+                <div class="error"><?php echo isset($ErrorMessagesLogin["form-email-login"]) ? $ErrorMessagesLogin["form-email-login"] : "" ?></div>
+                <input id="login-account" name="form-email-login" type="text" class="form-control" value="<?php echo isset($oldValuesLogin['form-email-login']) ? htmlspecialchars($oldValuesLogin['form-email-login']) : ''; ?>">
+                <a>.</a>
+            </div>
+            <div class="form-group">
+                <label for="login-password" class="form-label">Mật khẩu *</label>
+                <div class="error"><?php echo isset($ErrorMessagesLogin["passwordlogin"]) ? $ErrorMessagesLogin["passwordlogin"] : "" ?></div>
+                <input id="login-password" name="passwordlogin" type="password" class="form-control">
+            </div>
+
+            <div class="authen__btns">
+                <button type="submit" class="btn btn--default">Đăng Nhập</button>
+                <input type="checkbox" class="authen-checkbox">
+                <label class="form-label">Ghi nhớ mật khẩu</label>
+            </div>
+            
+            <a class="authen__link">Quên mật khẩu ?</a>
+        </div>
+    </form>
+</div>
+
+
+            
+        </div>
+        </form>
         <div class="up-top" id="upTop" onclick="goToTop()">
             <i class="fas fa-chevron-up"></i>
         </div>

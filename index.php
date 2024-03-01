@@ -1455,14 +1455,12 @@
     <!-- Modal Form -->
 
     <?php
-$ErrorMessages = array();
-$oldValues = array();
+        $ErrorMessages = array();
+        $oldValues = array();
 
-$ErrorMessagesLogin = array();
-$oldValuesLogin = array();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_POST["btn btn--default"])) {
-   
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
     // Kiểm tra username
     if (empty($_POST["form-userName"])) {
         $ErrorMessages["form-userName"] = "Vui lòng nhập tên người dùng";
@@ -1515,6 +1513,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_POST["btn btn--default"])) 
         // Thực hiện xử lý đăng ký ở đây hoặc chuyển hướng trang
         // header("Location: register_process.php");
         // exit;
+        header("Location: index.php");
     }
 
 
@@ -1542,8 +1541,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_POST["btn btn--default"])) 
         // Thực hiện xử lý đăng nhập ở đây hoặc chuyển hướng trang
         // header("Location: login_process.php");
         // exit;
+        header("Location: index.php");
     }
+
 }
+
 ?>
 
 <div class="ModalForm">
@@ -1606,6 +1608,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_POST["btn btn--default"])) 
                 <label for="login-password" class="form-label">Mật khẩu *</label>
                 <div class="error"><?php echo isset($ErrorMessagesLogin["passwordlogin"]) ? $ErrorMessagesLogin["passwordlogin"] : "" ?></div>
                 <input id="login-password" name="passwordlogin" type="password" class="form-control">
+                <p>.</p>
             </div>
 
             <div class="authen__btns">
@@ -1697,6 +1700,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" and isset($_POST["btn btn--default"])) 
 
 </html>
 <?php
+
 function checklogin(){
 
 }

@@ -229,71 +229,71 @@
         </div>
     </div>
 
-        <?php
+    <?php
         $ErrorMessages = array();
         $oldValues = array();
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Kiểm tra họ tên
 
-            if (empty($_POST["account"])) {
-                $ErrorMessages["account"] = "Vui lòng nhập họ tên";
-            } else {
-                $oldValues["account"] = $_POST["account"];
-            }
+    
+    // Kiểm tra họ tên
+    if (empty($_POST["account"])) {
+        $ErrorMessages["account"] = "Vui lòng nhập họ tên";
+    } else {
+        $oldValues["account"] = $_POST["account"];
+    }
 
-            // Kiểm tra địa chỉ
-            if (empty($_POST["address"])) {
-                $ErrorMessages["address"] = "Vui lòng nhập địa chỉ";
-            } else {
-                $oldValues["address"] = $_POST["address"];
-            }
+    // Kiểm tra địa chỉ
+    if (empty($_POST["address"])) {
+        $ErrorMessages["address"] = "Vui lòng nhập địa chỉ";
+    } else {
+        $oldValues["address"] = $_POST["address"];
+    }
 
-            // Kiểm tra tỉnh/thành phố
-            if (empty($_POST["city"])) {
-                $ErrorMessages["city"] = "Vui lòng nhập tỉnh/thành phố";
-            } else {
-                $oldValues["city"] = $_POST["city"];
-            }
+    // Kiểm tra tỉnh/thành phố
+    if (empty($_POST["city"])) {
+        $ErrorMessages["city"] = "Vui lòng nhập tỉnh/thành phố";
+    } else {
+        $oldValues["city"] = $_POST["city"];
+    }
 
-            // Kiểm tra email
-            if (empty($_POST["email"])) {
-                $ErrorMessages["email"] = "Vui lòng nhập email";
-            } else {
-                $email = $_POST["email"];
-                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    $ErrorMessages["email"] = "Email không hợp lệ";
-                } else {
-                    $oldValues["email"] = $email;
-                }
-            }
-
-            // Kiểm tra số điện thoại
-            if (empty($_POST["phone"])) {
-                $ErrorMessages["phone"] = "Vui lòng nhập số điện thoại";
-            } else {
-                $phone = $_POST["phone"];
-                if (!preg_match("/^[0-9]{10}$/", $phone)) {
-                    $ErrorMessages["phone"] = "Số điện thoại không hợp lệ";
-                } else {
-                    $oldValues["phone"] = $phone;
-                }
-            }
-
-            $oldValues["note"] = $_POST["note"];
-
-
-
-
-            
-        if(empty($ErrorMessages)) {
-            if(isset($_POST["End-order"])){
-                header("Location:index.php");
-             }
-        
-         }
+    // Kiểm tra email
+    if (empty($_POST["email"])) {
+        $ErrorMessages["email"] = "Vui lòng nhập email";
+    } else {
+        $email = $_POST["email"];
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $ErrorMessages["email"] = "Email không hợp lệ";
+        } else {
+            $oldValues["email"] = $email;
         }
-        ?>
+    }
+
+    // Kiểm tra số điện thoại
+    if (empty($_POST["phone"])) {
+        $ErrorMessages["phone"] = "Vui lòng nhập số điện thoại";
+    } else {
+        $phone = $_POST["phone"];
+        if (!preg_match("/^[0-9]{10}$/", $phone)) {
+            $ErrorMessages["phone"] = "Số điện thoại không hợp lệ";
+        } else {
+            $oldValues["phone"] = $phone;
+        }
+    }
+
+
+    $oldValues["note"] = isset($_POST["note"]) ? $_POST["note"] : "";
+    
+    // Kiểm tra xem có lỗi không
+    if(empty($ErrorMessages)) {
+        // Nếu không có lỗi, kiểm tra nút Đặt hàng đã được nhấn hay chưa
+            // Chuyển hướng về trang index.php
+            header("Location: index.php");
+            exit; // Kết thúc kịch bản PHP sau khi chuyển hướng
+    }
+}
+?>
+
 
 
 
@@ -326,7 +326,7 @@
                             <p>.</p>
                         </div>
                         <div class="form-group">
-                            <label for="email" class="form-label">Email *</label>
+                            <label  for="email" class="form-label">Email *</label>
                             <p>.</p>
                             <div class="error"><?php echo isset($ErrorMessages["email"]) ? $ErrorMessages["email"] : ""; ?></div>
                             <input id="email" name="email" type="text" class="form-control" value="<?php echo isset($oldValues["email"]) ? htmlspecialchars($oldValues["email"]) : ""; ?>">
@@ -348,7 +348,7 @@
                     </div>
                     <div class="form-group">
                         <p>.</p>
-                        <button type="submit" class="btn btn--default">Xác nhận</button>
+                        <button type="submit" class="btn btn--default">Đặt hàng</button>
                     </div>
                 </form>
             </div>
@@ -401,9 +401,8 @@
                                 1,120,000 ₫
                             </div>
                         </div>
-                        <form action="index.php" method ="post" name = "End-order">
-                        <div class="btn btn--default">Đặt hàng</div>
-                        </form>
+                        
+
                     </div>
 
                 </div>

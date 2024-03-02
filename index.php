@@ -1514,7 +1514,7 @@
     // Kiểm tra nếu không có lỗi thì chuyển hướng trang về lại form đăng ký
     if (empty($ErrorMessages)) {
         // Thực hiện xử lý đăng ký ở đây hoặc chuyển hướng trang
-        // header("Location: register_process.php");
+      
         
         header("Location: index.php");
         exit;

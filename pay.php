@@ -286,10 +286,12 @@
     
     // Kiểm tra xem có lỗi không
     if(empty($ErrorMessages)) {
+        
         // Nếu không có lỗi, kiểm tra nút Đặt hàng đã được nhấn hay chưa
             // Chuyển hướng về trang index.php
             header("Location: index.php");
-            exit; // Kết thúc kịch bản PHP sau khi chuyển hướng
+            // Kết thúc kịch bản PHP sau khi chuyển hướng
+        
     }
 }
 ?>
@@ -301,6 +303,7 @@
     <div class="grid wide">
         <div class="row">
             <div class="col l-7 m-12 s-12">
+                <!-- form -->
                 <form action="pay.php" method="post" name="form-order" >
                     <div class="pay-information">
                         <div class="pay__heading">Thông tin thanh toán</div>
@@ -348,9 +351,12 @@
                     </div>
                     <div class="form-group">
                         <p>.</p>
-                        <button type="submit" class="btn btn--default">Đặt hàng</button>
+                        <button type="submit" class="btn btn--default" name ="submit-order">Đặt hàng</button>
                     </div>
                 </form>
+
+        <!-- form -->
+
             </div>
                 <div class="col l-5 m-12 s-12">
                     <div class="pay-order">

@@ -62,44 +62,44 @@
                         <ul class="order__list">
                             <li class="item-order">
                                 <div class="order-wrap">
-                                    <a href="product.html" class="order-img">
+                                    <a href="product.php" class="order-img">
                                         <img src="./assets/img/product/Slide1.JPG" alt="">
                                     </a>
                                     <div class="order-main">
-                                        <a href="product.html" class="order-main-name">Áo sơ mi caro </a>
+                                        <a href="product.php" class="order-main-name">Áo sơ mi caro </a>
                                         <div class="order-main-price"> 45,000 ₫</div>
                                     </div>
-                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                    <a href="product.php" class="order-close"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </li>
                             <li class="item-order">
                                 <div class="order-wrap">
-                                    <a href="product.html" class="order-img">
+                                    <a href="product.php" class="order-img">
                                         <img src="./assets/img/product/Slide2.JPG" alt="">
                                     </a>
                                     <div class="order-main">
-                                        <a href="product.html" class="order-main-name">Áo khoác đen</a>
+                                        <a href="product.php" class="order-main-name">Áo khoác đen</a>
                                         <div class="order-main-price"> 476,000 ₫</div>
                                     </div>
-                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                    <a href="product.php" class="order-close"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </li>
                             <li class="item-order">
                                 <div class="order-wrap">
-                                    <a href="product.html" class="order-img">
+                                    <a href="product.php" class="order-img">
                                         <img src="./assets/img/product/Slide23.JPG" alt="">
                                     </a>
                                     <div class="order-main">
-                                        <a href="product.html" class="order-main-name">Áo phông xanh </a>
+                                        <a href="product.php" class="order-main-name">Áo phông xanh </a>
                                         <div class="order-main-price">210,000 ₫</div>
                                     </div>
-                                    <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                                    <a href="product.php" class="order-close"><i class="far fa-times-circle"></i></a>
                                 </div>
                             </li>
                         </ul>
                         <div class="total-money">Tổng cộng: 135.000đ</div>
                         <a href="cart.php" class="btn btn--default cart-btn">Xem giỏ hàng</a>
-                        <a href="pay.html" class="btn btn--default cart-btn orange">Thanh toán</a>
+                        <a href="pay.php" class="btn btn--default cart-btn orange">Thanh toán</a>
                         <!-- norcart -->
                         <!-- <img class="header__cart-img-nocart" src="http://www.giaybinhduong.com/images/empty-cart.JPG" alt=""> -->
                     </div>
@@ -220,10 +220,10 @@
                     </div>
                 </li>
                 <li class="header__nav-item">
-                    <a href="news.html" class="header__nav-link">Tin Tức</a>
+                    <a href="news.php" class="header__nav-link">Tin Tức</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="contact.html" class="header__nav-link">Liên Hệ</a>
+                    <a href="contact.php" class="header__nav-link">Liên Hệ</a>
                 </li>
             </ul>
         </div>

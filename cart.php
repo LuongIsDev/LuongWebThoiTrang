@@ -367,7 +367,7 @@
                                 1,120,000 ₫
                             </div>
                         </div>
-                        <a href="http://127.0.0.1:5500/pay.php" class="btn btn--default orange">Tiến hành thanh toán</a>
+                        <a href="pay.php" class="btn btn--default orange">Tiến hành thanh toán</a>
                         <div class="main__pay-title">Phiếu ưu đãi</div>
                         <input type="text" class="form-control">
                         <div class="btn btn--default">Áp dụng</div>

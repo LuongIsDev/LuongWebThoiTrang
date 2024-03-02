@@ -229,45 +229,129 @@
         </div>
     </div>
 
+        <?php
+        $ErrorMessages = array();
+        $oldValues = array();
 
-    <div class="main">
-        <div class="grid wide">
-            <div class="row">
-                <div class="col l-7 m-12 s-12">
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            // Kiểm tra họ tên
+
+            if (empty($_POST["account"])) {
+                $ErrorMessages["account"] = "Vui lòng nhập họ tên";
+            } else {
+                $oldValues["account"] = $_POST["account"];
+            }
+
+            // Kiểm tra địa chỉ
+            if (empty($_POST["address"])) {
+                $ErrorMessages["address"] = "Vui lòng nhập địa chỉ";
+            } else {
+                $oldValues["address"] = $_POST["address"];
+            }
+
+            // Kiểm tra tỉnh/thành phố
+            if (empty($_POST["city"])) {
+                $ErrorMessages["city"] = "Vui lòng nhập tỉnh/thành phố";
+            } else {
+                $oldValues["city"] = $_POST["city"];
+            }
+
+            // Kiểm tra email
+            if (empty($_POST["email"])) {
+                $ErrorMessages["email"] = "Vui lòng nhập email";
+            } else {
+                $email = $_POST["email"];
+                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    $ErrorMessages["email"] = "Email không hợp lệ";
+                } else {
+                    $oldValues["email"] = $email;
+                }
+            }
+
+            // Kiểm tra số điện thoại
+            if (empty($_POST["phone"])) {
+                $ErrorMessages["phone"] = "Vui lòng nhập số điện thoại";
+            } else {
+                $phone = $_POST["phone"];
+                if (!preg_match("/^[0-9]{10}$/", $phone)) {
+                    $ErrorMessages["phone"] = "Số điện thoại không hợp lệ";
+                } else {
+                    $oldValues["phone"] = $phone;
+                }
+            }
+
+            $oldValues["note"] = $_POST["note"];
+
+
+
+
+            
+        if(empty($ErrorMessages)) {
+            if(isset($_POST["End-order"])){
+                header("Location:index.php");
+             }
+        
+         }
+        }
+        ?>
+
+
+
+<div class="main">
+    <div class="grid wide">
+        <div class="row">
+            <div class="col l-7 m-12 s-12">
+                <form action="pay.php" method="post" name="form-order" >
                     <div class="pay-information">
                         <div class="pay__heading">Thông tin thanh toán</div>
                         <div class="form-group">
                             <label for="account" class="form-label">Họ Tên *</label>
-                            <input id="account" name="account" type="text" class="form-control">
                             <p>.</p>
-                            <!-- <span class="form-message">Không hợp lệ !</span> -->
+                            <div class="error"><?php echo isset($ErrorMessages["account"]) ? $ErrorMessages["account"] : ""; ?></div>
+                            <input id="account" name="account" type="text" class="form-control" value="<?php echo isset($oldValues["account"]) ? htmlspecialchars($oldValues["account"]) : ""; ?>">
+                            <p>.</p>
                         </div>
                         <div class="form-group">
-                            <label for="account" class="form-label">Địa chỉ *</label>
-                            <input id="account" name="account" type="text" class="form-control">
-                            <span class="form-message"></span>
+                            <label for="address" class="form-label">Địa chỉ *</label>
+                            <p>.</p>
+                            <div class="error"><?php echo isset($ErrorMessages["address"]) ? $ErrorMessages["address"] : ""; ?></div>
+                            <input id="address" name="address" type="text" class="form-control" value="<?php echo isset($oldValues["address"]) ? htmlspecialchars($oldValues["address"]) : ""; ?>">
+                            <p>.</p>
                         </div>
                         <div class="form-group">
-                            <label for="account" class="form-label">Tỉnh / Thành phố *</label>
-                            <input id="account" name="account" type="text" class="form-control">
-                            <span class="form-message"></span>
+                            <label for="city" class="form-label">Tỉnh / Thành phố *</label>
+                            <p>.</p>
+                            <div class="error"><?php echo isset($ErrorMessages["city"]) ? $ErrorMessages["city"] : ""; ?></div>
+                            <input id="city" name="city" type="text" class="form-control" value="<?php echo isset($oldValues["city"]) ? htmlspecialchars($oldValues["city"]) : ""; ?>">
+                            <p>.</p>
                         </div>
                         <div class="form-group">
-                            <label for="account" class="form-label">Email *</label>
-                            <input id="account" name="account" type="text" class="form-control">
-                            <span class="form-message"></span>
+                            <label for="email" class="form-label">Email *</label>
+                            <p>.</p>
+                            <div class="error"><?php echo isset($ErrorMessages["email"]) ? $ErrorMessages["email"] : ""; ?></div>
+                            <input id="email" name="email" type="text" class="form-control" value="<?php echo isset($oldValues["email"]) ? htmlspecialchars($oldValues["email"]) : ""; ?>">
+                            <p>.</p>
                         </div>
                         <div class="form-group">
-                            <label for="account" class="form-label">Số điện thoại *</label>
-                            <input id="account" name="account" type="text" class="form-control">
-                            <span class="form-message"></span>
+                            <label for="phone" class="form-label">Số điện thoại *</label>
+                            <p>.</p>
+                            <div class="error"><?php echo isset($ErrorMessages["phone"]) ? $ErrorMessages["phone"] : ""; ?></div>
+                            <input id="phone" name="phone" type="text" class="form-control" value="<?php echo isset($oldValues["phone"]) ? htmlspecialchars($oldValues["phone"]) : ""; ?>">
+                            <p>.</p>
                         </div>
                         <div class="form-group">
-                            <label for="account" class="form-label">Ghi chú cho đơn hàng</label>
-                            <textarea class="form-control" name="" id="" cols="30" rows="20"></textarea>
+                            <label for="note" class="form-label">Ghi chú cho đơn hàng</label>
+                            <textarea class="form-control" name="note" id="note" cols="30" rows="5"><?php echo isset($oldValues["note"]) ? htmlspecialchars($oldValues["note"]) : ""; ?></textarea>
+                          
+
                         </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <p>.</p>
+                        <button type="submit" class="btn btn--default">Xác nhận</button>
+                    </div>
+                </form>
+            </div>
                 <div class="col l-5 m-12 s-12">
                     <div class="pay-order">
                         <div class="pay__heading">Đơn hàng của bạn</div>
@@ -317,7 +401,9 @@
                                 1,120,000 ₫
                             </div>
                         </div>
+                        <form action="index.php" method ="post" name = "End-order">
                         <div class="btn btn--default">Đặt hàng</div>
+                        </form>
                     </div>
 
                 </div>
@@ -437,17 +523,17 @@
                 <div class="form-group">
                     <label for="password" class="form-label">Tài khoản Email *</label>
                     <input id="password" name="password" type="text" class="form-control">
-                    <span class="form-message"></span>
+                
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Mật khẩu *</label>
                     <input id="password" name="password" type="text" class="form-control">
-                    <span class="form-message"></span>
+                
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">Nhập lại mật khẩu *</label>
                     <input id="password" name="password" type="text" class="form-control">
-                    <span class="form-message"></span>
+                
                 </div>
                 <div class="authen__btns">
                     <div class="btn btn--default">Đăng Kí</div>
@@ -466,7 +552,7 @@
                 <div class="form-group">
                     <label for="password" class="form-label">Mật khẩu *</label>
                     <input id="password" name="password" type="text" class="form-control">
-                    <span class="form-message"></span>
+                
                 </div>
                 <div class="authen__btns">
                     <div class="btn btn--default">Đăng Nhập</div>

@@ -1458,11 +1458,12 @@
         $ErrorMessages = array();
         $oldValues = array();
 
+        $ErrorMessagesLogin=array();
+        $oldValuesLogin=array();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-
-    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if(isset($_POST["register-form"])){
+   
     // Kiểm tra username
     if (empty($_POST["form-userName"])) {
         $ErrorMessages["form-userName"] = "Vui lòng nhập tên người dùng";
@@ -1514,11 +1515,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($ErrorMessages)) {
         // Thực hiện xử lý đăng ký ở đây hoặc chuyển hướng trang
         // header("Location: register_process.php");
-        // exit;
+        
         header("Location: index.php");
+        exit;
+
         
     }
-
+}elseif(isset($_POST["login-form"])){
 
     // Kiểm tra email đăng nhập
     if (empty($_POST["form-email-login"])) {
@@ -1545,10 +1548,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // header("Location: login_process.php");
         // exit;
         header("Location: index.php");
+        exit;
     }
 
 }
-
+}
 ?>
 
 <div class="ModalForm">
@@ -1571,13 +1575,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="error"><?php echo isset($ErrorMessages["form-email"]) ? $ErrorMessages["form-email"] : "" ?></div>
                     <input id="register-email" name="form-email" type="text" class="form-control" value="<?php echo isset($oldValues['form-email']) ? htmlspecialchars($oldValues['form-email']) : ''; ?>">
                     <div>.</div>
+                    
                 </div>
                 <div class="form-group">
                     <label for="register-password" class="form-label">Mật khẩu *</label>
+
                     <p>.</p>
                     <div class="error"><?php echo isset($ErrorMessages["form-password"]) ? $ErrorMessages["form-password"] : "" ?></div>
                     <input id="register-password" name="form-password" type="password" class="form-control" value="<?php echo isset($oldValues['form-password']) ? htmlspecialchars($oldValues['form-password']) : ''; ?>">
                     <p>.</p>
+
                 </div>
                 <div class="form-group">
                     <label for="confirm-password" class="form-label">Nhập lại mật khẩu *</label>
@@ -1585,10 +1592,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="error"><?php echo isset($ErrorMessages["confirm-password"]) ? $ErrorMessages["confirm-password"] : "" ?></div>
                     <input id="confirm-password" name="confirm-password" type="password" class="form-control" value="<?php echo isset($oldValues['confirm-password']) ? htmlspecialchars($oldValues['confirm-password']) : ''; ?>">
                     <p>.</p>
+
                 </div>
 
                 <div class="authen__btns">
-                    <button type="submit" class="btn btn--default">Đăng Ký</button>
+                    <button type="submit" class="btn btn--default" name="register-form">Đăng Ký</button>
                 </div>
             </form>
         </div>
@@ -1597,33 +1605,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="modal" id="my-Login">
     <a href="#" class="overlay-close"></a>
-    <form action="index.php#my-Login" method="post">
+    <form action="index.php#my-Login" method="post" name ="login-form">
         <div class="authen-modal login">
             <h3 class="authen-modal__title">Đăng Nhập</h3>
             <div class="form-group">
-                <label for="login-account" class="form-label">Địa chỉ email *</label>
-                <br>
+                <label for="login-account" class="form-label">Địa chỉ email*</label>
+                <p>.</p>
                 <div class="error"><?php echo isset($ErrorMessagesLogin["form-email-login"]) ? $ErrorMessagesLogin["form-email-login"] : "" ?></div>
                 <input id="login-account" name="form-email-login" type="text" class="form-control" value="<?php echo isset($oldValuesLogin['form-email-login']) ? htmlspecialchars($oldValuesLogin['form-email-login']) : ''; ?>">
                 <a>.</a>
             </div>
+
             <div class="form-group">
                 <label for="login-password" class="form-label">Mật khẩu *</label>
+                <p>.</p>
                 <div class="error"><?php echo isset($ErrorMessagesLogin["passwordlogin"]) ? $ErrorMessagesLogin["passwordlogin"] : "" ?></div>
                 <input id="login-password" name="passwordlogin" type="password" class="form-control">
                 <p>.</p>
             </div>
 
             <div class="authen__btns">
-                <button type="submit" class="btn btn--default">Đăng Nhập</button>
+                <button type="submit" class="btn btn--default" name ="login-form">Đăng Nhập</button>
                 <input type="checkbox" class="authen-checkbox">
                 <label class="form-label">Ghi nhớ mật khẩu</label>
+
             </div>
             
-            <a class="authen__link">Quên mật khẩu ?</a>
+                <a class="authen__link">Quên mật khẩu ?</a>
+
         </div>
     </form>
 </div>
+
+
 
 
             
